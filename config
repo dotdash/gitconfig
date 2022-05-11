@@ -1,0 +1,46 @@
+[user]
+	email = bsteinbr@gmail.com
+	name = Björn Steinbrink
+
+[init]
+	defaultBranch = master
+
+[advice]
+	detachedHead = false
+
+[rebase]
+	autoStash = true
+	autoSquash = true
+
+[diff]
+	noprefix = true
+	tool = difftastic
+
+[difftool]
+	prompt = false
+
+[merge]
+	conflictStyle = diff3
+
+[pager]
+	difftool = true
+
+[diff "composer-lock-diff"]
+	command = composer-lock-diff-driver
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+
+[alias]
+	devpush = push --force-with-lease
+	fixup = commit --fixup
+	glog = log --graph --boundary --oneline --decorate --left-right
+	ra = rebase --abort
+	ri = rebase --interactive
+	rc = rebase --continue
+	review = log --reverse -p origin/master..
+	prlog = log --oneline --reverse origin/master..
+	dft = difftool
+
+[include]
+	path = config.local
