@@ -38,8 +38,8 @@
 	ra = rebase --abort
 	ri = rebase --interactive
 	rc = rebase --continue
-	review = log --reverse -p origin/master..
-	prlog = log --oneline --reverse origin/master..
+	review = log --reverse -p --ext-diff origin/HEAD..
+	prlog = log --oneline --reverse origin/HEAD..
 	dft = difftool
 
 [include]
