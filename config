@@ -2,6 +2,9 @@
 	email = bsteinbr@gmail.com
 	name = Björn Steinbrink
 
+[core]
+	pager = delta
+
 [init]
 	defaultBranch = master
 
