@@ -8,6 +8,9 @@
 [advice]
 	detachedHead = false
 
+[branch]
+	autoSetupRebase = always
+
 [rebase]
 	autoStash = true
 	autoSquash = true
