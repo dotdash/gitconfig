@@ -10,6 +10,7 @@
 
 [advice]
 	detachedHead = false
+	skippedCherryPicks = false
 
 [branch]
 	autoSetupRebase = always
