@@ -51,6 +51,7 @@
 	review = log --reverse -p --ext-diff @{u}..
 	prlog = log --oneline --reverse @{u}..
 	dft = difftool
+	cr = show -s --format=%h\\ \\\"%s\\\"
 
 [include]
 	path = config.local
