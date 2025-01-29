@@ -30,7 +30,7 @@
 	prompt = false
 
 [merge]
-	conflictStyle = diff3
+	conflictStyle = zdiff3
 
 [pager]
 	difftool = true
