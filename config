@@ -46,7 +46,7 @@
 	fixup = commit --fixup
 	glog = log --graph --boundary --oneline --decorate --left-right
 	ra = rebase --abort
-	ri = rebase --interactive
+	ri = rebase --interactive --keep-base
 	rc = rebase --continue
 	review = log --reverse -p --ext-diff @{u}..
 	prlog = log --oneline --reverse @{u}..
